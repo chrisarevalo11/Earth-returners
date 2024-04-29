@@ -15,4 +15,9 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
-}
+  overrides: [
+    {
+      files: ['*.html', '*.json', '*.css'],
+    },
+  ],
+};
