@@ -9,6 +9,7 @@ import ShoppingCart from '@/pages/ShoppingCart'
 import Deliver from '@/pages/Deliver'
 import ConfirmPayment from '@/pages/ConfirmPayment'
 import PaymentMethod from '@/pages/PaymentMethod'
+import Juli from '@/pages/Juli'
 
 export default function AnimatedRoutes() {
 	const location = useLocation()
@@ -36,6 +37,7 @@ export default function AnimatedRoutes() {
 					path='/payment-method'
 					element={<Layout children={<PaymentMethod />} />}
 				/>
+				<Route path='/juli' element={<Layout children={<Juli />} />} />
 			</Routes>
 		</AnimatePresence>
 	)
