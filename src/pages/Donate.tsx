@@ -2,7 +2,7 @@ import BackArrow from '@/components/icons/BackArrow'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-export default function PaymentMethod() {
+export default function Donate() {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -11,10 +11,10 @@ export default function PaymentMethod() {
 			className='h-full flex flex-col items-start py-6 px-10 gap-[10px]'
 		>
 			<div className='flex items-center gap-5 mb-5'>
-				<Link to='/deliver'>
+				<Link to='/donations'>
 					<BackArrow />
 				</Link>
-				<h2 className='text-3xl text-lightGreen'>Forma de pago</h2>
+				<h2 className='text-3xl text-lightGreen line-clamp-2'>Donar</h2>
 			</div>
 
 			<section className='w-full flex flex-col mt-5 gap-7'>

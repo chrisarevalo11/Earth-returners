@@ -19,7 +19,7 @@ export default function Navbar(): JSX.Element {
 				<Link
 					to={route.path}
 					key={index}
-					className={`flex items-center justify-center ${
+					className={`flex items-center justify-center text-white ${
 						location.pathname === route.path
 							? 'bg-[#F1F1F1] rounded-full relative -top-[30px] w-[80px] h-[80px] p-3'
 							: ''
@@ -27,7 +27,7 @@ export default function Navbar(): JSX.Element {
 				>
 					{route.path === location.pathname ? (
 						<div
-							className='w-full h-full flex items-center justify-center scale-[1.2]'
+							className='w-full h-full flex items-center justify-center scale-[1.2] text-white'
 							style={{
 								backgroundImage: `url(/images/active-path.png)`,
 								backgroundSize: 'contain',
@@ -52,7 +52,7 @@ const routes: Route[] = [
 		icon: <Coupons />
 	},
 	{
-		path: '/zonas',
+		path: '/reciclate',
 		icon: <Location />
 	},
 	{

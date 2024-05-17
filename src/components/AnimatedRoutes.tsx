@@ -10,6 +10,19 @@ import Deliver from '@/pages/Deliver'
 import ConfirmPayment from '@/pages/ConfirmPayment'
 import PaymentMethod from '@/pages/PaymentMethod'
 import Juli from '@/pages/Juli'
+import CouponsPage from '@/pages/Coupons'
+import Saju from '@/pages/Saju'
+import SajuGlasses from '@/pages/SajuGlasses'
+import Reciclate from '@/pages/Reciclate'
+import Reciclator from '@/pages/Reciclator'
+import AcceptReciclator from '@/pages/AcceptReciclator'
+import Pickups from '@/pages/Pickups'
+import Media from '@/pages/Media'
+import MarceVideo from '@/pages/MarceVideo'
+import News from '@/pages/News'
+import PrincipalNews from '@/pages/PrincipalNews'
+import Donations from '@/pages/Donations'
+import Donate from '@/pages/Donate'
 
 export default function AnimatedRoutes() {
 	const location = useLocation()
@@ -37,7 +50,45 @@ export default function AnimatedRoutes() {
 					path='/payment-method'
 					element={<Layout children={<PaymentMethod />} />}
 				/>
+
+				<Route
+					path='/coupons'
+					element={<Layout children={<CouponsPage />} />}
+				/>
+				<Route path='/saju' element={<Layout children={<Saju />} />} />
+				<Route
+					path='/saju-glasses'
+					element={<Layout children={<SajuGlasses />} />}
+				/>
+				<Route
+					path='/reciclate'
+					element={<Layout children={<Reciclate />} />}
+				/>
+				<Route
+					path='/reciclator'
+					element={<Layout children={<Reciclator />} />}
+				/>
+				<Route
+					path='/accept-reciclator'
+					element={<Layout children={<AcceptReciclator />} />}
+				/>
+				<Route path='/pickups' element={<Layout children={<Pickups />} />} />
+				<Route path='/media' element={<Layout children={<Media />} />} />
+				<Route
+					path='/marce-video'
+					element={<Layout children={<MarceVideo />} />}
+				/>
+				<Route path='/news' element={<Layout children={<News />} />} />
+				<Route
+					path='/principal-news'
+					element={<Layout children={<PrincipalNews />} />}
+				/>
 				<Route path='/juli' element={<Layout children={<Juli />} />} />
+				<Route
+					path='/donations'
+					element={<Layout children={<Donations />} />}
+				/>
+				<Route path='/donate' element={<Layout children={<Donate />} />} />
 			</Routes>
 		</AnimatePresence>
 	)

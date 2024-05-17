@@ -66,7 +66,7 @@ export default function Topbar() {
 							<p className='text-2xl font-sen'>Mis puntos</p>
 						</li>
 					</Link>
-					<Link to={'/home'}>
+					<Link to={'/pickups'}>
 						<li className='px-10 py-4 flex gap-3'>
 							<Pickups />
 							<p className='text-2xl font-sen'>Mis recogidas</p>

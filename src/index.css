@@ -57,7 +57,9 @@ h6 {
 }
 
 input[type='text'],
-input[type='password'] {
+input[type='password'],
+input[type='email'],
+input[type='number'] {
 	background-color: var(--light-bg-green);
 	color: var(--light-green);
 	padding: 14px 22px;
@@ -66,7 +68,9 @@ input[type='password'] {
 }
 
 input[type='text']::placeholder,
-input[type='password']::placeholder {
+input[type='password']::placeholder,
+input[type='email']::placeholder,
+input[type='number']::placeholder {
 	color: var(--light-green);
 }
 

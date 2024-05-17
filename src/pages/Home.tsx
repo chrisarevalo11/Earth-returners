@@ -11,7 +11,7 @@ export default function Home() {
 		>
 			<h1 className='text-3xl font-bold text-lightGreen'>Inicio</h1>
 			<section className='flex flex-col gap-10 items-center mt-10'>
-				<Link to={'/home'} className='h-52 w-[330px]'>
+				<Link to={'/news'} className='h-52 w-[330px]'>
 					<div
 						style={{
 							backgroundImage: 'url(/images/bg-item-home.png)',
@@ -26,7 +26,7 @@ export default function Home() {
 						</p>
 					</div>
 				</Link>
-				<Link to={'/home'} className='h-52 w-[330px]'>
+				<Link to={'/media'} className='h-52 w-[330px]'>
 					<div
 						style={{
 							backgroundImage: 'url(/images/bg-item-home.png)',
